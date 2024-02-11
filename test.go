@@ -1,5 +1,7 @@
 package privategomoduletest
 
-func Test() string {
-	return "test"
+import "github.com/pkg/errors"
+
+func Test() error {
+	return errors.New("test")
 }
